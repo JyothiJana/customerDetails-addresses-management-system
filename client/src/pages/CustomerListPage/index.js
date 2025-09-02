@@ -100,7 +100,7 @@ const CustomerListPage = () => {
             <CustomersList>
               <thead>
                 <TableRow>
-                  <TableHeader>ID</TableHeader>
+                  <TableHeader>S.No.</TableHeader>
                   <TableHeader>First Name</TableHeader>
                   <TableHeader>Last Name</TableHeader>
                   <TableHeader>Phone</TableHeader>

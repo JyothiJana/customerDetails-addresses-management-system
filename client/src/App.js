@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 // Import your pages
 import CustomerListPage from "./pages/CustomerListPage";
 import CustomerDetailsPage from "./pages/CustomerDetailsPage";
+import CustomerFormPage from "./pages/CustomerFormPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 
         {/* Customer details page */}
         <Route path="/customers/:id" element={<CustomerDetailsPage />} />
+        <Route path="/customers/edit/:id" element={<CustomerFormPage />} />
 
         {/* Fallback route for 404 */}
         <Route path="*" element={<h2 style={{ textAlign: "center", marginTop: "50px" }}>Page Not Found</h2>} />
